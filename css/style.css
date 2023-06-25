@@ -1,0 +1,310 @@
+.container {
+  position: relative;
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+  height: 285px;
+  margin-top: 30px;
+  padding-top: 45px;
+  margin-left: 150px;
+}
+.container .layer-1 {
+  position: relative;
+  display: inline-block;
+  transform: rotate(-35deg);
+}
+.container .layer-1 .border-block {
+  display: inline-block;
+  width: 85px;
+  height: 180px;
+  border: 1px solid black;
+  transform: skew(-35deg);
+}
+.container .layer-1 .border-block .inside-left {
+  width: 10px;
+  height: 180px;
+  border-right: 1px solid black;
+}
+.container .layer-1 .border-block .inside-left-little {
+  width: 14px;
+  height: 156px;
+  border-right: 1px solid black;
+  position: absolute;
+  top: 12px;
+}
+.container .layer-1 .border-block .inside-right {
+  width: 10px;
+  height: 180px;
+  border-left: 1px solid black;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.container .layer-1 .border-block .inside-top {
+  width: 65px;
+  height: 8px;
+  border-bottom: 0.8px solid black;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  right: 10px;
+}
+.container .layer-1 .border-block .inside-right-little {
+  width: 14px;
+  height: 156px;
+  border-right: 1px solid black;
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
+.container .layer-1 .border-block .inside-top-little {
+  width: 65px;
+  height: 8px;
+  border-bottom: 0.8px solid black;
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  right: 10px;
+}
+.container .layer-1 .border-block .inside-bottom {
+  width: 65px;
+  height: 8px;
+  border-top: 0.8px solid black;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+}
+.container .layer-1 .border-block .inside-bottom-little {
+  width: 65px;
+  height: 8px;
+  border-top: 0.8px solid black;
+  position: absolute;
+  bottom: 3px;
+  left: 10px;
+  right: 10px;
+}
+.container .layer-1 .border-block .border-window {
+  width: 55px;
+  height: 157.5px;
+  background: blue;
+  position: absolute;
+  top: 11.5px;
+  left: 15px;
+}
+.container .layer-1 .left {
+  width: 12px;
+  height: 220px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  transform: rotate(35deg);
+  position: absolute;
+  left: -11.5px;
+  top: -23.5px;
+}
+.container .layer-1 .top {
+  width: 87px;
+  height: 6px;
+  position: absolute;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  top: -7px;
+  right: -59px;
+  transform: skew(55deg);
+}
+.container .layer-2 {
+  height: 220px;
+  width: 256px;
+  border: 1px solid black;
+  border-left: none;
+  display: inline-block;
+  position: absolute;
+  left: 78px;
+  top: 0.2px;
+  background: blue;
+}
+.container .layer-2 .inside-left-border {
+  border-right: 1px solid black;
+  height: 190px;
+  width: 14px;
+  float: left;
+}
+.container .layer-2 .inside-right-border {
+  border-left: 1px solid black;
+  height: 190px;
+  width: 14px;
+  float: right;
+}
+.container .layer-2 .inside-top-border {
+  width: 256.5px;
+  height: 14px;
+  border-bottom: 1px solid black;
+}
+.container .layer-2 .inside-bottom-border {
+  width: 256.5px;
+  height: 14px;
+  border-top: 1px solid black;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.container .layer-2 .cappa {
+  height: 206px;
+  width: 120px;
+  background: red;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  display: inline-block;
+  z-index: 2;
+  animation: cappa 2s linear alternate infinite;
+}
+.container .layer-2 .cappa .left-cap {
+  border: 1px solid black;
+  width: 15px;
+  height: 204px;
+  display: inline-block;
+}
+.container .layer-2 .cappa .right-cap {
+  border: 1px solid black;
+  width: 15px;
+  height: 204px;
+  float: right;
+}
+.container .layer-2 .cappa .top-cap {
+  border: 1px solid black;
+  border-right: none;
+  border-left: none;
+  width: 86px;
+  height: 14px;
+  position: absolute;
+  top: 0px;
+  left: 17px;
+}
+.container .layer-2 .cappa .bottom-cap {
+  border: 1px solid black;
+  border-right: none;
+  border-left: none;
+  width: 86px;
+  height: 14px;
+  position: absolute;
+  bottom: 0px;
+  left: 17px;
+}
+.container .layer-2 .cappa .left-cap-little {
+  border-right: 1px solid black;
+  width: 2px;
+  height: 168px;
+  position: absolute;
+  top: 19px;
+  left: 17px;
+}
+.container .layer-2 .cappa .right-cap-little {
+  border-left: 1px solid black;
+  width: 2px;
+  height: 168px;
+  position: absolute;
+  top: 19px;
+  right: 17px;
+}
+.container .layer-2 .cappa .top-cap-little {
+  border-bottom: 1px solid black;
+  width: 86px;
+  height: 3px;
+  position: absolute;
+  top: 15px;
+  left: 17px;
+}
+.container .layer-2 .cappa .bottom-cap-little {
+  border-top: 1px solid black;
+  width: 86px;
+  height: 3px;
+  position: absolute;
+  bottom: 15px;
+  left: 17px;
+  z-index: 1;
+}
+@keyframes cappa {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(95px);
+  }
+}
+.container .layer-2 .cappa-2 {
+  height: 206px;
+  width: 120px;
+  background: red;
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  display: inline-block;
+  z-index: 1;
+}
+.container .layer-2 .cappa-2 .left-cap {
+  border: 1px solid black;
+  width: 15px;
+  height: 204px;
+  display: inline-block;
+}
+.container .layer-2 .cappa-2 .right-cap {
+  border: 1px solid black;
+  width: 15px;
+  height: 204px;
+  float: right;
+}
+.container .layer-2 .cappa-2 .top-cap {
+  border: 1px solid black;
+  border-right: none;
+  border-left: none;
+  width: 86px;
+  height: 14px;
+  position: absolute;
+  top: 0px;
+  left: 17px;
+}
+.container .layer-2 .cappa-2 .bottom-cap {
+  border: 1px solid black;
+  border-right: none;
+  border-left: none;
+  width: 86px;
+  height: 14px;
+  position: absolute;
+  bottom: 0px;
+  left: 17px;
+}
+.container .layer-2 .cappa-2 .left-cap-little {
+  border-right: 1px solid black;
+  width: 2px;
+  height: 168px;
+  position: absolute;
+  top: 19px;
+  left: 17px;
+}
+.container .layer-2 .cappa-2 .right-cap-little {
+  border-left: 1px solid black;
+  width: 2px;
+  height: 168px;
+  position: absolute;
+  top: 19px;
+  right: 17px;
+}
+.container .layer-2 .cappa-2 .top-cap-little {
+  border-bottom: 1px solid black;
+  width: 86px;
+  height: 3px;
+  position: absolute;
+  top: 15px;
+  left: 17px;
+}
+.container .layer-2 .cappa-2 .bottom-cap-little {
+  border-top: 1px solid black;
+  width: 86px;
+  height: 3px;
+  position: absolute;
+  bottom: 15px;
+  left: 17px;
+  z-index: 1;
+}
